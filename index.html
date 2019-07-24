@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>XOXO Game</title>
+
+    <style>
+        .wrapper {
+            margin: 20 auto;
+        }
+        .text-center {
+            text-align: center;
+        }
+        #canvas-xoxo {
+            margin: auto;
+            display: block;
+        }
+        .player-1 span {color: black;}
+        .player-2 span {color: red;}
+        .notification {font-size: 24px;}
+
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script src="sketch.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="text-center">X-O-X-O</h1>
+        <p class="text-center">
+            <strong class="player player-1">Player 1: <span>●</span></strong>
+            ⚜
+            <strong class="player player-2">Player 2: <span>●</span></strong>
+        </p>
+        <p id="notification" class="text-center notification"></p>
+        <p class="text-center"><button onclick="location.reload();">Replay</button></p>
+    </div>
+</body>
+</html>
